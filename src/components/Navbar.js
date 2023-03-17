@@ -11,23 +11,12 @@ const Navbar = () => {
             </div>
             <ul className="c-navbar__menu">
                 <li className="c-navbar__menu__item">
-                    <a href="#massagens">Massagens e procedimentos</a>
+                    <a href="#sabage">sabrage</a>
                 </li>
                 <li className="c-navbar__menu__item">
-                    <a href="#beneficios">benefícios da massoterapia</a>
+                    <a href="#vinhos">vinhos</a>
                 </li>
-                <li className="c-navbar__menu__item">
-                    <a href="#avaliacoes">Avaliações</a>
-                </li>
-                <li className="c-navbar__menu__item">
-                    <a href="#contato">Contato</a>
-                </li>
-
             </ul>
-            {/* <a className="c-navbar__whatsapp" href="https://api.whatsapp.com/send?phone=5551992173433" target="_blank" rel="noreferrer">
-                <FontAwesomeIcon icon={faWhatsapp} />
-                <span>Agende aqui</span>
-            </a> */}
         </nav>
     )
 }

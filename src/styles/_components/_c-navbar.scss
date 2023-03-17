@@ -7,7 +7,9 @@
     font-family: $font-secondary;
     position: fixed;
     z-index: 9;
-    width: 100%;
+    left: 0;
+    right: 0;
+    color: $default-color;
 
     @include mobile {
         flex-direction: column;
@@ -42,72 +44,12 @@
             text-transform: lowercase;
             font-size: 16px;
             font-weight: 600;
+            a {
+                text-decoration: none;
+            }
 
             &:hover {
                 border-bottom: 1px solid $primary-color;
-            }
-        }
-    }
-
-
-    &__whatsapp {
-        margin: 0 16px;
-        border: 1px solid $whatsapp;
-        padding: 8px;
-        border-radius: 3px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        
-        @include desktop {
-            flex-direction: column;
-            position: fixed;
-            right: 24px;
-            top: 30%;
-        }
-
-        @include mobile {
-            width: 100%;
-            justify-content: center;
-            margin-top: 16px;
-        }
-        
-        svg {
-            color: $whatsapp;
-            font-size: 32px;
-
-            @include mobile {
-                margin-right: 8px;
-                font-size: 24px;
-            }
-        }
-        
-        span {
-            text-transform: uppercase;
-            font-weight: 600;
-            font-size: 18px;
-            margin-top: 8px;
-            color: $secondary-color;
-
-            @include mobile {
-                margin-top: 0;
-                font-size: 14px;
-            }
-        }
-
-        &:hover {
-            background-color: transparentize($whatsapp, 0.94);
-            border-color: transparentize($whatsapp, 0.94);
-        }
-    }
-
-    .invert & {
-        &__whatsapp {
-            top: 20%;
-            background-color: transparentize(white, 0.5);
-
-            &:hover {
-                background-color: transparentize(white, 0.2);
             }
         }
     }
