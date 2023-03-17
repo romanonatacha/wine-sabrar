@@ -1,0 +1,114 @@
+.c-navbar {
+    background-color: rgb(0 0 0 / 25%);
+    padding: 24px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $font-secondary;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+
+    @include mobile {
+        flex-direction: column;
+        padding: 16px;
+    }
+    
+    &__logo {
+        display: flex;
+        align-items: center;
+        width: 200px;
+        
+        img {
+            width: 100%;
+        }
+    }
+    
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+
+        @include mobile {
+            display: none;
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        &__item {
+            margin: 0 16px;
+            cursor: pointer;
+            text-transform: lowercase;
+            font-size: 16px;
+            font-weight: 600;
+
+            &:hover {
+                border-bottom: 1px solid $primary-color;
+            }
+        }
+    }
+
+
+    &__whatsapp {
+        margin: 0 16px;
+        border: 1px solid $whatsapp;
+        padding: 8px;
+        border-radius: 3px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        
+        @include desktop {
+            flex-direction: column;
+            position: fixed;
+            right: 24px;
+            top: 30%;
+        }
+
+        @include mobile {
+            width: 100%;
+            justify-content: center;
+            margin-top: 16px;
+        }
+        
+        svg {
+            color: $whatsapp;
+            font-size: 32px;
+
+            @include mobile {
+                margin-right: 8px;
+                font-size: 24px;
+            }
+        }
+        
+        span {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 18px;
+            margin-top: 8px;
+            color: $secondary-color;
+
+            @include mobile {
+                margin-top: 0;
+                font-size: 14px;
+            }
+        }
+
+        &:hover {
+            background-color: transparentize($whatsapp, 0.94);
+            border-color: transparentize($whatsapp, 0.94);
+        }
+    }
+
+    .invert & {
+        &__whatsapp {
+            top: 20%;
+            background-color: transparentize(white, 0.5);
+
+            &:hover {
+                background-color: transparentize(white, 0.2);
+            }
+        }
+    }
+}

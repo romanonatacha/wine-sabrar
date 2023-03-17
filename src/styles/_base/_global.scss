@@ -1,0 +1,37 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 12px !important;
+    font-family: $font-primary;
+    color: $default-color !important;
+    overflow-x: hidden;
+}
+
+ol, ul, li {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+a {
+    color: unset !important;
+
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+@include desktop {
+    .dt-hide {
+        display: none;
+    }
+}
+
+@include mobile {
+    .mb-hide {
+        display: none;
+    }
+}
