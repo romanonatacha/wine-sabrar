@@ -9,4 +9,5 @@ export default {
     slide7: "Contrary to popular belief, the saber does not actually cut through the glass, but rather strikes the glass along a line of stress, causing it to break cleanly.",
     slide8: "It is important to ensure that the bottle is adequately chilled and has not been shaken, as this can cause the champagne to spray uncontrollably.",
     slide9: "Sabrage is a great way to wow your guests and add an extra element of excitement to any celebration.", 
+    social: "check our social media",
 }

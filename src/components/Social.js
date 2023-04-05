@@ -1,11 +1,17 @@
+import { useRouter } from 'next/router'
+import pt from '../locales/pt'
+import en from '../locales/en'
 
 const Social = () => {
 
+    const router = useRouter()
+    const { locale } = router
+    const t = locale === 'pt' ? pt : en
 
     return (
         <section className='c-social'>
             <div>
-                <h2>confira nossas redes sociais</h2>
+                <h2>{t.social}</h2>
 
                 <div className="container">
                     <div className="c-social__icons">
