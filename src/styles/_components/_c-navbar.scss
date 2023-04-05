@@ -12,7 +12,6 @@
     color: $default-color;
 
     @include mobile {
-        flex-direction: column;
         padding: 16px;
     }
     
@@ -51,6 +50,26 @@
             &:hover {
                 border-bottom: 1px solid $primary-color;
             }
+        }
+    }
+
+    &__lang {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 24px;
+
+        @include mobile {
+            gap: 16px;
+        }
+
+        img {
+            cursor: pointer;
+            opacity: 0.4;
+        }
+
+        img.active {
+            opacity: 1;
         }
     }
 }

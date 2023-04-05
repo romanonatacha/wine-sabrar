@@ -24,6 +24,19 @@ a {
     }
 }
 
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+
+    @include mobile {
+        max-width: 300px;
+    }
+}
+
+.fp-warning, .fp-watermark {
+    display: none;
+}
+
 @include desktop {
     .dt-hide {
         display: none;
