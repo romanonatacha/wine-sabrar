@@ -53,15 +53,16 @@
         }
     }
 
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
     &__lang {
         display: flex;
         align-items: center;
-        gap: 10px;
-        margin-left: 24px;
-
-        @include mobile {
-            gap: 16px;
-        }
+        gap: 16px;
 
         img {
             cursor: pointer;
